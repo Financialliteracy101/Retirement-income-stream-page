@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Build Wealth Today. Create Income for Tomorrow. | Financial Literacy 101</title>
+  <title>Build Wealth Today. Create Income for Tomorrow. | Tshepiso Financial Planner</title>
 
   <meta
     name="description"
@@ -60,7 +59,7 @@
 
 
   <!-- =====================================================
-       PAGE STYLING
+       STYLING
        ===================================================== -->
 
   <style>
@@ -69,6 +68,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -84,6 +87,7 @@
       margin: auto;
     }
 
+
     /* =====================================================
        HERO
        ===================================================== */
@@ -91,37 +95,41 @@
     .hero {
       background:
         linear-gradient(
-          rgba(0,0,0,0.72),
-          rgba(0,0,0,0.72)
+          rgba(0,0,0,0.74),
+          rgba(0,0,0,0.74)
         ),
-        linear-gradient(135deg, #161616, #3a2b18);
+        linear-gradient(135deg, #151515, #3a2b18);
 
       color: white;
-      padding: 90px 20px 80px;
+      padding: 85px 20px 75px;
       text-align: center;
     }
 
     .hero-content {
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
     }
 
     .hero h1 {
       font-size: 52px;
       line-height: 1.12;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       font-weight: 700;
     }
 
     .hero h1 span {
-      color: #c99a45;
+      color: #d0a052;
     }
 
     .hero p {
-      font-size: 21px;
-      max-width: 760px;
-      margin: 0 auto 35px;
+      font-size: 20px;
+      max-width: 780px;
+      margin: 0 auto 16px;
       color: #f1f1f1;
+    }
+
+    .hero .cta-button {
+      margin-top: 18px;
     }
 
     .cta-button {
@@ -142,9 +150,62 @@
     }
 
     .hero-note {
-      margin-top: 18px;
+      margin-top: 17px;
       font-size: 14px;
       color: #d7d7d7;
+    }
+
+
+    /* =====================================================
+       PERSONAL INTRODUCTION
+       ===================================================== */
+
+    .about-planner {
+      background: #ffffff;
+      padding: 55px 20px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .planner-content {
+      max-width: 850px;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+    }
+
+    .planner-photo {
+      width: 145px;
+      height: 145px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #f1e4d0;
+      flex-shrink: 0;
+    }
+
+    .planner-text {
+      text-align: left;
+    }
+
+    .planner-text h2 {
+      font-size: 28px;
+      margin-bottom: 4px;
+      color: #222;
+    }
+
+    .planner-title {
+      color: #b57514;
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .planner-text p {
+      color: #555;
+      font-size: 16px;
+      max-width: 650px;
     }
 
 
@@ -158,7 +219,7 @@
 
     .section-title {
       text-align: center;
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto 45px;
     }
 
@@ -180,7 +241,7 @@
        ===================================================== */
 
     .questions {
-      background: #f7f7f7;
+      background: #f5f1ea;
     }
 
     .question-grid {
@@ -192,10 +253,10 @@
     }
 
     .question-card {
-      background: white;
+      background: #ffffff;
       padding: 30px;
       border-radius: 10px;
-      border: 1px solid #e4e4e4;
+      border: 1px solid #e2d8c8;
       box-shadow: 0 5px 18px rgba(0,0,0,0.04);
     }
 
@@ -212,7 +273,7 @@
 
 
     /* =====================================================
-       BUILDING WEALTH
+       WEALTH SECTION
        ===================================================== */
 
     .wealth-section {
@@ -356,7 +417,7 @@
        ===================================================== */
 
     .form-section {
-      background: #f7f7f7;
+      background: #f5f1ea;
     }
 
     .form-wrapper {
@@ -366,6 +427,7 @@
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+      border: 1px solid #e2d8c8;
     }
 
     .form-wrapper h2 {
@@ -381,14 +443,15 @@
     }
 
     .form-group {
-      margin-bottom: 25px;
+      margin-bottom: 27px;
     }
 
-    .form-group label {
+    .form-group > label:first-child {
       display: block;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 11px;
       color: #222;
+      font-size: 16px;
     }
 
     input[type="text"],
@@ -408,21 +471,34 @@
       gap: 10px;
     }
 
+    /* Coloured answer choices */
+
     .option {
-      border: 1px solid #ddd;
+      display: block;
+      border: 1px solid #ded3c3;
       border-radius: 7px;
-      padding: 13px 15px;
+      padding: 14px 15px;
       cursor: pointer;
-      transition: 0.2s ease;
+      transition: all 0.2s ease;
+      background: #faf7f1;
+      color: #333;
+      font-weight: normal;
     }
 
     .option:hover {
       border-color: #b57514;
-      background: #faf8f4;
+      background: #f5ead8;
+    }
+
+    .option:has(input:checked) {
+      border-color: #b57514;
+      background: #eee0c9;
+      box-shadow: 0 0 0 1px #b57514;
     }
 
     .option input {
       margin-right: 9px;
+      accent-color: #b57514;
     }
 
     .submit-button {
@@ -435,6 +511,7 @@
       font-size: 17px;
       font-weight: bold;
       cursor: pointer;
+      transition: 0.2s ease;
     }
 
     .submit-button:hover {
@@ -450,15 +527,32 @@
 
 
     /* =====================================================
-       FOOTER
+       COMPLIANCE FOOTER
        ===================================================== */
 
     footer {
       background: #111;
       color: #aaa;
       text-align: center;
-      padding: 25px 15px;
+      padding: 35px 20px;
       font-size: 13px;
+    }
+
+    footer strong {
+      display: block;
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    footer .filer {
+      color: #cfcfcf;
+      margin-bottom: 6px;
+    }
+
+    footer .copyright {
+      margin-top: 12px;
+      color: #777;
     }
 
 
@@ -469,7 +563,7 @@
     @media (max-width: 800px) {
 
       .hero {
-        padding: 70px 20px 65px;
+        padding: 65px 20px 60px;
       }
 
       .hero h1 {
@@ -489,8 +583,22 @@
         grid-template-columns: 1fr;
       }
 
+      .planner-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .planner-text {
+        text-align: center;
+      }
+
+      .planner-photo {
+        width: 125px;
+        height: 125px;
+      }
+
       .form-wrapper {
-        padding: 25px 20px;
+        padding: 28px 20px;
       }
 
     }
@@ -541,6 +649,42 @@
 
 
   <!-- =====================================================
+       PERSONAL INTRODUCTION
+       ===================================================== -->
+
+  <section class="about-planner">
+
+    <div class="planner-content">
+
+      <img
+        src="IMG_20250821_152431.jpg"
+        alt="Tshepiso Financial Planner"
+        class="planner-photo"
+      >
+
+      <div class="planner-text">
+
+        <h2>Tshepiso Financial Planner</h2>
+
+        <div class="planner-title">
+          Financial Planner & Wealth Planning Professional
+        </div>
+
+        <p>
+          I help professionals make informed financial decisions,
+          structure their investments around their goals, and build
+          a strategy designed to turn today's wealth into tomorrow's
+          financial independence and future income.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
        RETIREMENT QUESTIONS
        ===================================================== -->
 
@@ -552,8 +696,9 @@
 
       <p>
         Retirement planning isn't simply about reaching a certain age.
-        It's about knowing what your money needs to accomplish before
-        you get there.
+        It's about knowing the number you need to achieve for your
+        investments to produce your desired income without eating
+        into your capital.
       </p>
 
     </div>
@@ -1157,12 +1302,24 @@
 
 
   <!-- =====================================================
-       FOOTER
+       COMPLIANCE FOOTER
        ===================================================== -->
 
   <footer>
 
-    © Financial Literacy 101 · Tshepiso Financial Planner
+    <strong>Tshepiso Financial Planner</strong>
+
+    <div class="filer">
+      A representative of Liberty Group Limited, an Authorised Financial Services Provider (FSP 2409).
+    </div>
+
+    <div>
+      Financial planning and advisory services. Terms, conditions, risks and limitations apply.
+    </div>
+
+    <div class="copyright">
+      © 2026 Tshepiso Financial Planner. All rights reserved.
+    </div>
 
   </footer>
 
@@ -1179,9 +1336,9 @@
     retirementForm.addEventListener("submit", function() {
 
       /*
-        Allow the form to submit to Apps Script through the
-        hidden iframe, then take the visitor to the thank-you
-        page.
+        Submit to Apps Script through the hidden iframe.
+        After the submission has had time to reach Apps Script,
+        take the visitor to the thank-you page.
       */
 
       setTimeout(function() {

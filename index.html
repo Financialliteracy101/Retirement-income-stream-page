@@ -6,64 +6,25 @@
 
   <title>Build Wealth Today. Create Income for Tomorrow. | Tshepiso Financial Planner</title>
 
-  <meta
-    name="description"
-    content="Build a wealth strategy designed around your future income, retirement goals, investment timeline and financial independence."
-  >
+  <meta name="description" content="A tailored wealth and retirement planning assessment for professionals who want to build wealth, create future income and work towards financial independence.">
 
-  <!-- =====================================================
-       META PIXEL
-       ===================================================== -->
-
+  <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
-    {
-      if(f.fbq)return;
-      n=f.fbq=function(){
-        n.callMethod ?
-        n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-      };
-
-      if(!f._fbq)f._fbq=n;
-
-      n.push=n;
-      n.loaded=!0;
-      n.version='2.0';
-      n.queue=[];
-
-      t=b.createElement(e);
-      t.async=!0;
-      t.src=v;
-
-      s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(
-      window,
-      document,
-      'script',
-      'https://connect.facebook.net/en_US/fbevents.js'
-    );
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
 
     fbq('init', '728696563457382');
     fbq('track', 'PageView');
   </script>
-
-  <noscript>
-    <img
-      height="1"
-      width="1"
-      style="display:none"
-      src="https://www.facebook.com/tr?id=728696563457382&ev=PageView&noscript=1"
-    />
-  </noscript>
-
-
-  <!-- =====================================================
-       STYLING
-       ===================================================== -->
+  <!-- End Meta Pixel Code -->
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -76,548 +37,536 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #222;
+      color: #171717;
       background: #ffffff;
       line-height: 1.6;
     }
 
     .container {
-      width: 92%;
+      width: 90%;
       max-width: 1100px;
-      margin: auto;
+      margin: 0 auto;
     }
 
-
-    /* =====================================================
-       HERO
-       ===================================================== */
+    /* HERO */
 
     .hero {
-      background:
-        linear-gradient(
-          rgba(0,0,0,0.74),
-          rgba(0,0,0,0.74)
-        ),
-        linear-gradient(135deg, #151515, #3a2b18);
-
-      color: white;
-      padding: 85px 20px 75px;
+      background: #111111;
+      color: #ffffff;
+      padding: 90px 20px 100px;
       text-align: center;
     }
 
-    .hero-content {
-      max-width: 900px;
-      margin: auto;
+    .hero-inner {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: #c59a52;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 22px;
     }
 
     .hero h1 {
-      font-size: 52px;
-      line-height: 1.12;
-      margin-bottom: 24px;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
       font-weight: 700;
+      margin-bottom: 28px;
     }
 
     .hero h1 span {
-      color: #d0a052;
+      color: #c59a52;
     }
 
     .hero p {
+      max-width: 760px;
+      margin: 0 auto 35px;
       font-size: 20px;
-      max-width: 780px;
-      margin: 0 auto 16px;
-      color: #f1f1f1;
+      color: #e7e7e7;
+      line-height: 1.7;
     }
 
-    .hero .cta-button {
-      margin-top: 18px;
-    }
-
-    .cta-button {
+    .cta {
       display: inline-block;
-      background: #b57514;
-      color: white;
-      padding: 17px 30px;
-      border-radius: 6px;
+      background: #c59a52;
+      color: #ffffff;
       text-decoration: none;
-      font-size: 17px;
-      font-weight: bold;
-      transition: 0.2s ease;
+      padding: 17px 30px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 700;
+      transition: 0.25s ease;
     }
 
-    .cta-button:hover {
-      background: #965f0d;
-      transform: translateY(-1px);
+    .cta:hover {
+      background: #d4ad6a;
+      transform: translateY(-2px);
     }
 
     .hero-note {
-      margin-top: 17px;
-      font-size: 14px;
-      color: #d7d7d7;
+      margin-top: 18px;
+      font-size: 13px;
+      color: #aaaaaa;
     }
 
+    /* INTRO */
 
-    /* =====================================================
-       PERSONAL INTRODUCTION
-       ===================================================== */
-
-    .about-planner {
+    .intro {
+      padding: 90px 20px;
       background: #ffffff;
-      padding: 55px 20px;
-      border-bottom: 1px solid #eeeeee;
     }
 
-    .planner-content {
-      max-width: 850px;
-      margin: auto;
-
-      display: flex;
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
       align-items: center;
-      justify-content: center;
-      gap: 35px;
+    }
+
+    .intro h2 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 20px;
+    }
+
+    .planner-card {
+      background: #f6f2eb;
+      padding: 35px;
+      border-radius: 8px;
+      text-align: center;
     }
 
     .planner-photo {
-      width: 145px;
-      height: 145px;
+      width: 230px;
+      height: 280px;
       object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid #f1e4d0;
-      flex-shrink: 0;
+      border-radius: 6px;
+      display: block;
+      margin: 0 auto 25px;
     }
 
-    .planner-text {
-      text-align: left;
+    .planner-card h3 {
+      font-size: 24px;
+      margin-bottom: 7px;
     }
 
-    .planner-text h2 {
-      font-size: 28px;
-      margin-bottom: 4px;
-      color: #222;
+    .planner-role {
+      color: #9a7537;
+      font-weight: 700;
+      margin-bottom: 18px;
     }
 
-    .planner-title {
-      color: #b57514;
-      font-weight: bold;
-      font-size: 17px;
-      margin-bottom: 10px;
-    }
-
-    .planner-text p {
-      color: #555;
+    .planner-card p {
       font-size: 16px;
-      max-width: 650px;
+      color: #555555;
     }
 
-
-    /* =====================================================
-       GENERAL SECTIONS
-       ===================================================== */
-
-    section {
-      padding: 75px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      max-width: 820px;
-      margin: 0 auto 45px;
-    }
-
-    .section-title h2 {
-      font-size: 38px;
-      line-height: 1.2;
-      margin-bottom: 16px;
-      color: #222;
-    }
-
-    .section-title p {
-      font-size: 18px;
-      color: #555;
-    }
-
-
-    /* =====================================================
-       RETIREMENT QUESTIONS
-       ===================================================== */
+    /* QUESTIONS */
 
     .questions {
-      background: #f5f1ea;
+      background: #f4eee5;
+      padding: 95px 20px;
     }
 
-    .question-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-      max-width: 950px;
-      margin: auto;
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 14px;
+    }
+
+    .section-heading h2 {
+      font-size: 43px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      font-size: 18px;
+      color: #5b5b5b;
     }
 
     .question-card {
+      max-width: 820px;
+      margin: 0 auto 28px;
       background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      border: 1px solid #e2d8c8;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.04);
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
     }
 
     .question-card h3 {
       font-size: 21px;
-      margin-bottom: 10px;
-      color: #2b2b2b;
+      margin-bottom: 20px;
+      line-height: 1.4;
     }
 
-    .question-card p {
-      color: #666;
-      font-size: 16px;
-    }
-
-
-    /* =====================================================
-       WEALTH SECTION
-       ===================================================== */
-
-    .wealth-section {
-      background: white;
-    }
-
-    .wealth-text {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-      font-size: 18px;
-      color: #555;
-    }
-
-    .wealth-text strong {
-      color: #222;
-    }
-
-
-    /* =====================================================
-       THREE PILLARS
-       ===================================================== */
-
-    .pillars {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      max-width: 1050px;
-      margin: 45px auto 0;
-    }
-
-    .pillar {
-      padding: 32px 25px;
-      border: 1px solid #e4e4e4;
-      border-radius: 10px;
-      text-align: center;
-      background: #fff;
-    }
-
-    .pillar-number {
-      width: 42px;
-      height: 42px;
-      line-height: 42px;
-      margin: 0 auto 18px;
-      border-radius: 50%;
-      background: #b57514;
-      color: white;
-      font-weight: bold;
-    }
-
-    .pillar h3 {
-      font-size: 21px;
+    .option {
+      display: block;
+      position: relative;
       margin-bottom: 12px;
     }
 
-    .pillar p {
-      color: #666;
-      font-size: 15px;
+    .option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
     }
 
+    .option label {
+      display: block;
+      border: 1px solid #d7d0c5;
+      padding: 15px 17px;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #ffffff;
+      transition: 0.2s ease;
+      color: #333333;
+    }
 
-    /* =====================================================
-       DARK SECTION
-       ===================================================== */
+    .option label:hover {
+      background: #f4eee5;
+      border-color: #c59a52;
+    }
 
-    .dark-section {
-      background: #181818;
-      color: white;
+    .option input:checked + label {
+      background: #efe4d1;
+      border-color: #c59a52;
+      box-shadow: inset 0 0 0 1px #c59a52;
+    }
+
+    /* WEALTH SECTION */
+
+    .wealth {
+      padding: 100px 20px;
+      background: #ffffff;
+    }
+
+    .wealth-content {
+      max-width: 850px;
+      margin: 0 auto;
       text-align: center;
     }
 
-    .dark-section .section-title h2 {
-      color: white;
+    .wealth h2 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 25px;
     }
 
-    .dark-section .section-title p {
-      color: #d2d2d2;
+    .wealth p {
+      font-size: 19px;
+      color: #555555;
+      margin-bottom: 20px;
+    }
+
+    .wealth-highlight {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .highlight-card {
+      padding: 30px 22px;
+      border: 1px solid #e3ded6;
+      border-radius: 7px;
+      background: #ffffff;
+    }
+
+    .highlight-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .highlight-card p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    /* DARK SECTION */
+
+    .dark-section {
+      background: #111111;
+      color: #ffffff;
+      padding: 100px 20px;
+      text-align: center;
     }
 
     .dark-content {
-      max-width: 820px;
-      margin: auto;
-      font-size: 18px;
-      color: #ddd;
+      max-width: 850px;
+      margin: 0 auto;
     }
 
-    .dark-content strong {
-      color: white;
+    .dark-section h2 {
+      font-size: 43px;
+      line-height: 1.15;
+      margin-bottom: 25px;
     }
 
+    .dark-section p {
+      font-size: 19px;
+      color: #dddddd;
+      margin-bottom: 22px;
+    }
 
-    /* =====================================================
-       TAX SECTION
-       ===================================================== */
+    .dark-section .gold {
+      color: #c59a52;
+      font-weight: 700;
+    }
 
-    .tax-section {
-      background: #f6f2eb;
+    /* TAX */
+
+    .tax {
+      padding: 95px 20px;
+      background: #f8f8f8;
     }
 
     .tax-content {
       max-width: 850px;
-      margin: auto;
+      margin: 0 auto;
+    }
+
+    .tax h2 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 25px;
       text-align: center;
     }
 
-    .tax-content p {
+    .tax p {
       font-size: 18px;
-      color: #555;
+      color: #555555;
       margin-bottom: 20px;
     }
 
-    .tax-highlight {
-      font-weight: bold;
-      color: #222;
+    .tax-box {
+      background: #ffffff;
+      border-left: 4px solid #c59a52;
+      padding: 28px;
+      margin-top: 35px;
     }
 
+    .tax-box p {
+      margin-bottom: 0;
+    }
 
-    /* =====================================================
-       WHO THIS IS FOR
-       ===================================================== */
+    /* AUDIENCE */
+
+    .audience {
+      padding: 95px 20px;
+      background: #ffffff;
+    }
+
+    .audience-content {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .audience h2 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 25px;
+    }
+
+    .audience p {
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 18px;
+    }
 
     .audience-list {
-      max-width: 750px;
       margin: 35px auto 0;
+      max-width: 700px;
+      text-align: left;
     }
 
-    .audience-item {
-      padding: 18px 0;
+    .audience-list div {
+      padding: 17px 0;
       border-bottom: 1px solid #e5e5e5;
       font-size: 17px;
-      color: #444;
     }
 
-    .audience-item strong {
-      color: #222;
+    .audience-list div::before {
+      content: "✓";
+      color: #c59a52;
+      font-weight: 700;
+      margin-right: 12px;
     }
 
-
-    /* =====================================================
-       FORM SECTION
-       ===================================================== */
+    /* FORM */
 
     .form-section {
-      background: #f5f1ea;
+      background: #111111;
+      color: #ffffff;
+      padding: 100px 20px;
     }
 
     .form-wrapper {
-      max-width: 720px;
-      margin: auto;
-      background: white;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .form-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .form-heading h2 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .form-heading p {
+      color: #cccccc;
+      font-size: 18px;
+    }
+
+    form {
+      background: #ffffff;
+      color: #171717;
       padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-      border: 1px solid #e2d8c8;
-    }
-
-    .form-wrapper h2 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
-
-    .form-intro {
-      text-align: center;
-      color: #666;
-      margin-bottom: 35px;
+      border-radius: 8px;
     }
 
     .form-group {
-      margin-bottom: 27px;
+      margin-bottom: 25px;
     }
 
-    .form-group > label:first-child {
+    .form-group label {
       display: block;
-      font-weight: bold;
-      margin-bottom: 11px;
-      color: #222;
-      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 9px;
+      font-size: 15px;
     }
 
-    input[type="text"],
-    input[type="tel"],
-    select {
+    .form-group input,
+    .form-group select {
       width: 100%;
-      padding: 14px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      padding: 15px;
+      border: 1px solid #d5d5d5;
+      border-radius: 4px;
       font-size: 16px;
-      background: white;
+      background: #ffffff;
+      color: #222222;
     }
 
-    .option-group {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #c59a52;
+      box-shadow: 0 0 0 2px rgba(197,154,82,0.12);
     }
 
-    /* Coloured answer choices */
-
-    .option {
-      display: block;
-      border: 1px solid #ded3c3;
-      border-radius: 7px;
-      padding: 14px 15px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      background: #faf7f1;
-      color: #333;
-      font-weight: normal;
-    }
-
-    .option:hover {
-      border-color: #b57514;
-      background: #f5ead8;
-    }
-
-    .option:has(input:checked) {
-      border-color: #b57514;
-      background: #eee0c9;
-      box-shadow: 0 0 0 1px #b57514;
-    }
-
-    .option input {
-      margin-right: 9px;
-      accent-color: #b57514;
-    }
-
-    .submit-button {
+    .submit-btn {
       width: 100%;
       border: none;
-      background: #b57514;
-      color: white;
+      background: #c59a52;
+      color: #ffffff;
       padding: 17px;
-      border-radius: 6px;
+      border-radius: 4px;
       font-size: 17px;
-      font-weight: bold;
+      font-weight: 700;
       cursor: pointer;
       transition: 0.2s ease;
     }
 
-    .submit-button:hover {
-      background: #965f0d;
+    .submit-btn:hover {
+      background: #aa813e;
     }
 
     .form-note {
       text-align: center;
-      font-size: 13px;
-      color: #777;
-      margin-top: 15px;
+      margin-top: 16px;
+      font-size: 12px;
+      color: #777777;
     }
 
-
-    /* =====================================================
-       COMPLIANCE FOOTER
-       ===================================================== */
+    /* FOOTER */
 
     footer {
-      background: #111;
-      color: #aaa;
+      background: #0b0b0b;
+      color: #aaaaaa;
+      padding: 40px 20px;
       text-align: center;
-      padding: 35px 20px;
-      font-size: 13px;
+      font-size: 12px;
+      line-height: 1.8;
     }
 
     footer strong {
-      display: block;
       color: #ffffff;
-      font-size: 16px;
-      margin-bottom: 6px;
+      display: block;
+      font-size: 15px;
+      margin-bottom: 4px;
     }
 
-    footer .filer {
-      color: #cfcfcf;
-      margin-bottom: 6px;
-    }
-
-    footer .copyright {
-      margin-top: 12px;
-      color: #777;
-    }
-
-
-    /* =====================================================
-       MOBILE
-       ===================================================== */
+    /* RESPONSIVE */
 
     @media (max-width: 800px) {
 
-      .hero {
-        padding: 65px 20px 60px;
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
       }
 
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      .hero p {
-        font-size: 18px;
-      }
-
-      .section-title h2 {
-        font-size: 31px;
-      }
-
-      .question-grid,
-      .pillars {
+      .wealth-highlight {
         grid-template-columns: 1fr;
       }
 
-      .planner-content {
-        flex-direction: column;
-        text-align: center;
+      .hero {
+        padding: 70px 20px 80px;
       }
 
-      .planner-text {
-        text-align: center;
+      .intro,
+      .questions,
+      .wealth,
+      .dark-section,
+      .tax,
+      .audience,
+      .form-section {
+        padding: 75px 20px;
       }
 
-      .planner-photo {
-        width: 125px;
-        height: 125px;
+      .intro h2,
+      .section-heading h2,
+      .wealth h2,
+      .dark-section h2,
+      .tax h2,
+      .audience h2,
+      .form-heading h2 {
+        font-size: 34px;
       }
 
-      .form-wrapper {
-        padding: 28px 20px;
+      form {
+        padding: 25px;
       }
-
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-
-  <!-- =====================================================
-       HERO
-       ===================================================== -->
+  <!-- HERO -->
 
   <section class="hero">
+    <div class="hero-inner">
 
-    <div class="hero-content">
+      <div class="eyebrow">Wealth & Retirement Planning</div>
 
       <h1>
         Build Wealth Today.<br>
@@ -625,56 +574,75 @@
       </h1>
 
       <p>
-        You work hard. You earn well. And you may already be putting
-        money aside every month.
+        You may already be earning well and putting money aside every month.
+        But the bigger question is whether your current wealth-building strategy
+        is actually taking you where you want to go.
       </p>
 
-      <p>
-        But is your wealth actually being built around the future
-        income, lifestyle and retirement you want?
-      </p>
-
-      <a href="#assessment" class="cta-button">
+      <a href="#assessment" class="cta">
         Start My Wealth & Retirement Assessment
       </a>
 
       <div class="hero-note">
-        A personalised assessment for professionals serious about
-        building long-term wealth.
+        For professionals who are serious about building long-term wealth.
       </div>
 
     </div>
-
   </section>
 
 
-  <!-- =====================================================
-       PERSONAL INTRODUCTION
-       ===================================================== -->
+  <!-- INTRO -->
 
-  <section class="about-planner">
+  <section class="intro">
 
-    <div class="planner-content">
+    <div class="container intro-grid">
 
-      <img
-        src="IMG_20250821_152431.jpg"
-        alt="Tshepiso Financial Planner"
-        class="planner-photo"
-      >
+      <div>
 
-      <div class="planner-text">
+        <div class="eyebrow">Your Money Needs a Strategy</div>
 
-        <h2>Tshepiso Financial Planner</h2>
+        <h2>
+          Having money to invest is only the beginning.
+        </h2>
 
-        <div class="planner-title">
+        <p>
+          As your income grows, your financial decisions become more important.
+          The money you are investing today should be working towards something
+          meaningful in the future.
+        </p>
+
+        <p>
+          That could mean creating the option to retire before 65, building
+          long-term financial independence, or creating an investment portfolio
+          capable of producing an income stream later in life.
+        </p>
+
+        <p>
+          The objective isn't simply to accumulate as much money as possible.
+          It's to build wealth with a clear purpose behind it.
+        </p>
+
+      </div>
+
+      <div class="planner-card">
+
+        <img
+          src="IMG_20250821_152431.jpg"
+          alt="Tshepiso Financial Planner"
+          class="planner-photo"
+        >
+
+        <h3>Tshepiso Financial Planner</h3>
+
+        <div class="planner-role">
           Financial Planner & Wealth Planning Professional
         </div>
 
         <p>
-          I help professionals make informed financial decisions,
-          structure their investments around their goals, and build
-          a strategy designed to turn today's wealth into tomorrow's
-          financial independence and future income.
+          I help professionals make informed financial decisions, structure
+          their investments around their goals, and build a strategy designed
+          to turn today's wealth into tomorrow's financial independence and
+          future income.
         </p>
 
       </div>
@@ -684,73 +652,200 @@
   </section>
 
 
-  <!-- =====================================================
-       RETIREMENT QUESTIONS
-       ===================================================== -->
+  <!-- QUESTIONS -->
 
   <section class="questions">
 
-    <div class="section-title">
+    <div class="section-heading">
 
-      <h2>When Would You Actually Like to Retire?</h2>
+      <div class="eyebrow">Start With the Right Questions</div>
+
+      <h2>
+        Before choosing investments, understand what you're trying to achieve.
+      </h2>
+
+      <p>
+        Your current position, your goals, your time horizon and the amount
+        you're able to invest all influence the strategy that makes sense.
+      </p>
+
+    </div>
+
+    <div class="container">
+
+      <div class="question-card">
+
+        <h3>
+          1. What are you currently doing to build wealth for your future?
+        </h3>
+
+        <div class="option">
+          <input type="radio" id="wealth1" name="wealthStatus" value="I have investments, but I'm not sure they're structured optimally" form="retirementForm">
+          <label for="wealth1">
+            I have investments, but I'm not sure they're structured optimally
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="wealth2" name="wealthStatus" value="I have savings or property, but haven't built an investment strategy" form="retirementForm">
+          <label for="wealth2">
+            I have savings or property, but haven't built an investment strategy
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="wealth3" name="wealthStatus" value="I haven't started investing yet, but I want to" form="retirementForm">
+          <label for="wealth3">
+            I haven't started investing yet, but I want to
+          </label>
+        </div>
+
+      </div>
+
+
+      <div class="question-card">
+
+        <h3>
+          2. What would you ultimately like your wealth to achieve?
+        </h3>
+
+        <div class="option">
+          <input type="radio" id="goal1" name="wealthGoal" value="Build wealth and create a future income stream" form="retirementForm">
+          <label for="goal1">
+            Build wealth and create a future income stream
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="goal2" name="wealthGoal" value="Give me the option to retire earlier than 65" form="retirementForm">
+          <label for="goal2">
+            Give me the option to retire earlier than 65
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="goal3" name="wealthGoal" value="Build long-term financial independence" form="retirementForm">
+          <label for="goal3">
+            Build long-term financial independence
+          </label>
+        </div>
+
+      </div>
+
+
+      <div class="question-card">
+
+        <h3>
+          3. How much could you comfortably allocate towards building your wealth each month?
+        </h3>
+
+        <div class="option">
+          <input type="radio" id="amount1" name="monthlyInvestment" value="R3,000 – R9,999" form="retirementForm">
+          <label for="amount1">
+            R3,000 – R9,999
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="amount2" name="monthlyInvestment" value="R10,000 – R19,999" form="retirementForm">
+          <label for="amount2">
+            R10,000 – R19,999
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="amount3" name="monthlyInvestment" value="R20,000+" form="retirementForm">
+          <label for="amount3">
+            R20,000+
+          </label>
+        </div>
+
+      </div>
+
+
+      <div class="question-card">
+
+        <h3>
+          4. When would you ideally like to have the option to retire?
+        </h3>
+
+        <div class="option">
+          <input type="radio" id="retire1" name="retirementAge" value="Before 55" form="retirementForm">
+          <label for="retire1">
+            Before 55
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="retire2" name="retirementAge" value="55 – 65" form="retirementForm">
+          <label for="retire2">
+            55 – 65
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="retire3" name="retirementAge" value="I haven't worked this out yet" form="retirementForm">
+          <label for="retire3">
+            I haven't worked this out yet
+          </label>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WEALTH SECTION -->
+
+  <section class="wealth">
+
+    <div class="wealth-content">
+
+      <div class="eyebrow">Retirement Is a Number, Not an Age</div>
+
+      <h2>
+        The goal isn't simply to retire. It's to build enough wealth to give yourself options.
+      </h2>
 
       <p>
         Retirement planning isn't simply about reaching a certain age.
-        It's about knowing the number you need to achieve for your
-        investments to produce your desired income without eating
-        into your capital.
+        It's about knowing the number you need to achieve for your investments
+        to produce your desired income without eating into your capital.
       </p>
 
-    </div>
+      <p>
+        That means thinking about what you want your future to look like,
+        how much income you'll need, how long your investments have to grow,
+        and how today's decisions affect tomorrow's options.
+      </p>
 
+      <div class="wealth-highlight">
 
-    <div class="question-grid">
+        <div class="highlight-card">
+          <h3>Your Number</h3>
+          <p>
+            Understand what your wealth may need to achieve to support the
+            lifestyle you want.
+          </p>
+        </div>
 
-      <div class="question-card">
+        <div class="highlight-card">
+          <h3>Your Timeline</h3>
+          <p>
+            Your investment strategy should reflect when you need the money,
+            not simply your current age.
+          </p>
+        </div>
 
-        <h3>What income would you want your investments to provide?</h3>
-
-        <p>
-          Your future lifestyle will need an income. Your investment
-          strategy should be built with that destination in mind.
-        </p>
-
-      </div>
-
-
-      <div class="question-card">
-
-        <h3>How much wealth would you need?</h3>
-
-        <p>
-          The number isn't the same for everyone. It depends on the
-          lifestyle you want and the income your assets will need to
-          generate.
-        </p>
-
-      </div>
-
-
-      <div class="question-card">
-
-        <h3>Are you investing enough — and in the right places?</h3>
-
-        <p>
-          Saving money is one thing. Structuring it around your goals,
-          time horizon and future needs is another.
-        </p>
-
-      </div>
-
-
-      <div class="question-card">
-
-        <h3>Could you reach financial independence earlier than 65?</h3>
-
-        <p>
-          Traditional retirement ages don't have to define when you
-          become financially independent.
-        </p>
+        <div class="highlight-card">
+          <h3>Your Income</h3>
+          <p>
+            Build towards investments that can ultimately contribute to
+            a sustainable future income stream.
+          </p>
+        </div>
 
       </div>
 
@@ -759,129 +854,27 @@
   </section>
 
 
-  <!-- =====================================================
-       WEALTH SECTION
-       ===================================================== -->
-
-  <section class="wealth-section">
-
-    <div class="section-title">
-
-      <h2>You're Investing. But Do You Know What You're Building Towards?</h2>
-
-      <p>
-        Building wealth isn't simply about choosing an investment.
-      </p>
-
-    </div>
-
-
-    <div class="wealth-text">
-
-      <p>
-        A proper wealth strategy considers your
-        <strong>goals, time horizon, future income needs,
-        lifestyle and overall financial position.</strong>
-      </p>
-
-      <br>
-
-      <p>
-        The objective isn't to put every spare rand into one product.
-        It's to understand what your money needs to do — and structure
-        your investments accordingly.
-      </p>
-
-    </div>
-
-
-    <div class="pillars">
-
-      <div class="pillar">
-
-        <div class="pillar-number">1</div>
-
-        <h3>Build Wealth</h3>
-
-        <p>
-          Grow your assets over time through an investment strategy
-          aligned with your goals and timeframe.
-        </p>
-
-      </div>
-
-
-      <div class="pillar">
-
-        <div class="pillar-number">2</div>
-
-        <h3>Create Future Income</h3>
-
-        <p>
-          Position your wealth to eventually contribute towards the
-          income you'll need later in life.
-        </p>
-
-      </div>
-
-
-      <div class="pillar">
-
-        <div class="pillar-number">3</div>
-
-        <h3>Retire on Your Terms</h3>
-
-        <p>
-          Understand what needs to happen financially if you want the
-          option to step away from work earlier.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       DARK SECTION
-       ===================================================== -->
+  <!-- DARK SECTION -->
 
   <section class="dark-section">
 
-    <div class="section-title">
-
-      <h2>Wealth Isn't Built With One Investment</h2>
-
-      <p>
-        Your financial strategy should evolve around your life —
-        not force your life to fit around one product.
-      </p>
-
-    </div>
-
-
     <div class="dark-content">
 
+      <div class="eyebrow">Build for the Future</div>
+
+      <h2>
+        Your investments should work towards more than just a balance on a statement.
+      </h2>
+
       <p>
-        Depending on your circumstances, different investment
-        structures can serve different purposes.
+        The real value of wealth is the freedom and options it can create.
       </p>
 
-      <br>
-
       <p>
-        Some may be designed for long-term retirement income.
-        Others may help with wealth accumulation, flexibility or
-        future financial goals.
-      </p>
-
-      <br>
-
-      <p>
-        <strong>
-          The important question is how everything fits together.
-        </strong>
+        Whether your goal is to retire earlier, create additional income,
+        preserve your lifestyle or build financial independence, your
+        investment strategy should be built around <span class="gold">your
+        actual objectives.</span>
       </p>
 
     </div>
@@ -889,91 +882,36 @@
   </section>
 
 
-  <!-- =====================================================
-       TAX SECTION
-       ===================================================== -->
+  <!-- TAX -->
 
-  <section class="tax-section">
-
-    <div class="section-title">
-
-      <h2>And Your Tax Position Matters Too</h2>
-
-    </div>
-
+  <section class="tax">
 
     <div class="tax-content">
 
-      <p>
-        If you're earning a higher income, tax efficiency should form
-        part of the investment conversation.
-      </p>
+      <div class="eyebrow" style="text-align:center;">Tax Efficiency</div>
+
+      <h2>
+        Tax should form part of the conversation — not drive the strategy.
+      </h2>
 
       <p>
-        Depending on your circumstances, certain retirement
-        contributions and investment structures may provide
-        tax advantages.
-      </p>
-
-      <p class="tax-highlight">
-        But tax savings shouldn't be the reason you build your wealth
-        strategy.
+        If you're earning a higher income, tax efficiency should form part of
+        the investment conversation.
       </p>
 
       <p>
-        They're one part of a bigger picture — alongside your goals,
-        investment horizon, future income requirements and lifestyle.
+        Depending on your circumstances, certain retirement contributions and
+        investment structures may provide tax advantages.
       </p>
 
-    </div>
+      <div class="tax-box">
 
-  </section>
+        <p>
+          But tax savings shouldn't be the reason you build your wealth strategy.
+          They're one part of a bigger picture that also includes your goals,
+          future needs, investment timeframe, risk profile and desired lifestyle.
+        </p>
 
-
-  <!-- =====================================================
-       WHO THIS IS FOR
-       ===================================================== -->
-
-  <section>
-
-    <div class="section-title">
-
-      <h2>This Is For You If...</h2>
-
-      <p>
-        You're already earning and want your money to start working
-        with greater purpose.
-      </p>
-
-    </div>
-
-
-    <div class="audience-list">
-
-      <div class="audience-item">
-        <strong>You have surplus income to invest</strong> and want
-        to build meaningful long-term wealth.
-      </div>
-
-      <div class="audience-item">
-        <strong>You're busy with your career</strong> and don't have
-        the time to constantly monitor investments and markets.
-      </div>
-
-      <div class="audience-item">
-        <strong>You have investments or savings</strong> but aren't
-        completely sure whether everything is structured around your
-        future.
-      </div>
-
-      <div class="audience-item">
-        <strong>You want the option to retire earlier</strong>
-        rather than simply waiting for a traditional retirement age.
-      </div>
-
-      <div class="audience-item">
-        <strong>You want a strategy</strong> rather than simply
-        another investment product.
       </div>
 
     </div>
@@ -981,32 +919,93 @@
   </section>
 
 
-  <!-- =====================================================
-       ASSESSMENT FORM
-       ===================================================== -->
+  <!-- AUDIENCE -->
+
+  <section class="audience">
+
+    <div class="audience-content">
+
+      <div class="eyebrow">Who This Is For</div>
+
+      <h2>
+        This is for professionals who are serious about building wealth.
+      </h2>
+
+      <p>
+        You don't necessarily need to know exactly which investment products
+        you need.
+      </p>
+
+      <p>
+        You do need to have a genuine desire to build wealth and be willing
+        to allocate money towards your future.
+      </p>
+
+      <div class="audience-list">
+
+        <div>
+          You have surplus income available to invest each month.
+        </div>
+
+        <div>
+          You want your money working towards clearly defined goals.
+        </div>
+
+        <div>
+          You want to understand whether your current strategy is taking you in the right direction.
+        </div>
+
+        <div>
+          You want the option of creating future income from your investments.
+        </div>
+
+        <div>
+          You value having a professional partner to help structure your wealth strategy.
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ASSESSMENT FORM -->
 
   <section class="form-section" id="assessment">
 
     <div class="form-wrapper">
 
-      <h2>Start Your Wealth & Retirement Assessment</h2>
+      <div class="form-heading">
 
-      <p class="form-intro">
-        Answer four short questions so we can understand where you
-        are today and what you're working towards.
-      </p>
+        <div class="eyebrow">Take the Next Step</div>
 
+        <h2>
+          Start Your Wealth & Retirement Assessment
+        </h2>
+
+        <p>
+          Answer a few questions so I can understand where you are,
+          what you're working towards and how much you're currently
+          able to allocate towards building your wealth.
+        </p>
+
+      </div>
+
+
+      <!-- IMPORTANT:
+           The form now sends page=retirement directly in the URL
+           as well as through the hidden field.
+      -->
 
       <form
         id="retirementForm"
+        action="https://script.google.com/macros/s/AKfycbzyGUacEWBPatqoLS2awhknY0ERpQ0zcmcnZ3z5HRcwt6cbnKILGf61Ri4n8esxvB_LOQ/exec?page=retirement"
         method="POST"
-        action="https://script.google.com/macros/s/AKfycbzyGUacEWBPatqoLS2awhknY0ERpQ0zcmcnZ3z5HRcwt6cbnKILGf61Ri4n8esxvB_LOQ/exec"
-        target="hiddenFrame"
+        target="hidden_iframe"
       >
 
-
-        <!-- Identifies this as the retirement page -->
-
+        <!-- Retirement routing -->
         <input
           type="hidden"
           name="page"
@@ -1014,190 +1013,147 @@
         >
 
 
-        <!-- =================================================
-             QUESTION 1
-             ================================================= -->
+        <!-- Question 1 -->
 
         <div class="form-group">
 
-          <label>
-            1. What are you currently doing to build wealth for your future?
+          <label for="wealthStatusSelect">
+            What are you currently doing to build wealth for your future?
           </label>
 
-          <div class="option-group">
+          <select
+            id="wealthStatusSelect"
+            name="wealthStatus"
+            required
+          >
 
-            <label class="option">
-              <input
-                type="radio"
-                name="wealthStatus"
-                value="I have investments, but I'm not sure they're structured optimally"
-                required
-              >
+            <option value="">
+              Select an option
+            </option>
+
+            <option value="I have investments, but I'm not sure they're structured optimally">
               I have investments, but I'm not sure they're structured optimally
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="wealthStatus"
-                value="I have savings or property, but haven't built an investment strategy"
-              >
+            <option value="I have savings or property, but haven't built an investment strategy">
               I have savings or property, but haven't built an investment strategy
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="wealthStatus"
-                value="I haven't started investing yet, but I want to"
-            >
+            <option value="I haven't started investing yet, but I want to">
               I haven't started investing yet, but I want to
-            </label>
+            </option>
 
-          </div>
+          </select>
 
         </div>
 
 
-        <!-- =================================================
-             QUESTION 2
-             ================================================= -->
+        <!-- Question 2 -->
 
         <div class="form-group">
 
-          <label>
-            2. What would you ultimately like your wealth to achieve?
+          <label for="wealthGoalSelect">
+            What would you ultimately like your wealth to achieve?
           </label>
 
-          <div class="option-group">
+          <select
+            id="wealthGoalSelect"
+            name="wealthGoal"
+            required
+          >
 
-            <label class="option">
-              <input
-                type="radio"
-                name="wealthGoal"
-                value="Build wealth and create a future income stream"
-                required
-              >
+            <option value="">
+              Select an option
+            </option>
+
+            <option value="Build wealth and create a future income stream">
               Build wealth and create a future income stream
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="wealthGoal"
-                value="Give me the option to retire earlier than 65"
-              >
+            <option value="Give me the option to retire earlier than 65">
               Give me the option to retire earlier than 65
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="wealthGoal"
-                value="Build long-term financial independence"
-              >
+            <option value="Build long-term financial independence">
               Build long-term financial independence
-            </label>
+            </option>
 
-          </div>
+          </select>
 
         </div>
 
 
-        <!-- =================================================
-             QUESTION 3
-             ================================================= -->
+        <!-- Question 3 -->
 
         <div class="form-group">
 
-          <label>
-            3. How much could you comfortably allocate towards
-            building your wealth each month?
+          <label for="monthlyInvestmentSelect">
+            How much could you comfortably allocate towards building your wealth each month?
           </label>
 
-          <div class="option-group">
+          <select
+            id="monthlyInvestmentSelect"
+            name="monthlyInvestment"
+            required
+          >
 
-            <label class="option">
-              <input
-                type="radio"
-                name="monthlyInvestment"
-                value="R3,000 – R9,999"
-                required
-              >
+            <option value="">
+              Select an option
+            </option>
+
+            <option value="R3,000 – R9,999">
               R3,000 – R9,999
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="monthlyInvestment"
-                value="R10,000 – R19,999"
-              >
+            <option value="R10,000 – R19,999">
               R10,000 – R19,999
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="monthlyInvestment"
-                value="R20,000+"
-              >
+            <option value="R20,000+">
               R20,000+
-            </label>
+            </option>
 
-          </div>
+          </select>
 
         </div>
 
 
-        <!-- =================================================
-             QUESTION 4
-             ================================================= -->
+        <!-- Question 4 -->
 
         <div class="form-group">
 
-          <label>
-            4. When would you ideally like to have the option to retire?
+          <label for="retirementAgeSelect">
+            When would you ideally like to have the option to retire?
           </label>
 
-          <div class="option-group">
+          <select
+            id="retirementAgeSelect"
+            name="retirementAge"
+            required
+          >
 
-            <label class="option">
-              <input
-                type="radio"
-                name="retirementAge"
-                value="Before 55"
-                required
-              >
+            <option value="">
+              Select an option
+            </option>
+
+            <option value="Before 55">
               Before 55
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="retirementAge"
-                value="55 – 65"
-              >
+            <option value="55 – 65">
               55 – 65
-            </label>
+            </option>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="retirementAge"
-                value="I haven't worked this out yet"
-              >
+            <option value="I haven't worked this out yet">
               I haven't worked this out yet
-            </label>
+            </option>
 
-          </div>
+          </select>
 
         </div>
 
 
-        <!-- =================================================
-             CONTACT DETAILS
-             ================================================= -->
+        <!-- Name -->
 
         <div class="form-group">
 
@@ -1216,6 +1172,8 @@
         </div>
 
 
+        <!-- Phone -->
+
         <div class="form-group">
 
           <label for="phone">
@@ -1232,6 +1190,8 @@
 
         </div>
 
+
+        <!-- Contact time -->
 
         <div class="form-group">
 
@@ -1266,92 +1226,69 @@
         </div>
 
 
-        <!-- =================================================
-             SUBMIT
-             ================================================= -->
-
         <button
           type="submit"
-          class="submit-button"
+          class="submit-btn"
         >
           Start My Wealth & Retirement Assessment
         </button>
 
-
-        <p class="form-note">
-          Your information will be used to contact you regarding
-          your assessment.
-        </p>
+        <div class="form-note">
+          Your information will be treated confidentially and used to contact you regarding your assessment.
+        </div>
 
       </form>
+
+
+      <!-- Hidden iframe prevents Apps Script response from replacing the page -->
+
+      <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display:none;"
+      ></iframe>
 
     </div>
 
   </section>
 
 
-  <!-- =====================================================
-       HIDDEN FRAME
-       ===================================================== -->
-
-  <iframe
-    name="hiddenFrame"
-    id="hiddenFrame"
-    style="display:none;"
-  ></iframe>
-
-
-  <!-- =====================================================
-       COMPLIANCE FOOTER
-       ===================================================== -->
+  <!-- FOOTER -->
 
   <footer>
 
     <strong>Tshepiso Financial Planner</strong>
 
-    <div class="filer">
-      A representative of Liberty Group Limited, an Authorised Financial Services Provider (FSP 2409).
-    </div>
+    A representative of Liberty Group Limited, an Authorised Financial Services Provider (FSP 2409).
 
-    <div>
-      Financial planning and advisory services. Terms, conditions, risks and limitations apply.
-    </div>
+    <br>
 
-    <div class="copyright">
-      © 2026 Tshepiso Financial Planner. All rights reserved.
-    </div>
+    Financial planning and advisory services. Terms, conditions, risks and limitations apply.
+
+    <br><br>
+
+    © 2026 Tshepiso Financial Planner. All rights reserved.
 
   </footer>
 
 
-  <!-- =====================================================
-       FORM SUBMISSION
-       ===================================================== -->
+  <!-- FORM SUBMISSION REDIRECT -->
 
   <script>
 
-    const retirementForm =
-      document.getElementById("retirementForm");
+    const retirementForm = document.getElementById("retirementForm");
 
     retirementForm.addEventListener("submit", function() {
 
-      /*
-        Submit to Apps Script through the hidden iframe.
-        After the submission has had time to reach Apps Script,
-        take the visitor to the thank-you page.
-      */
-
       setTimeout(function() {
 
-        window.location.href =
-          "thank-you.html";
+        window.location.href = "thank-you.html";
 
-      }, 1200);
+      }, 1500);
 
     });
 
   </script>
-
 
 </body>
 </html>

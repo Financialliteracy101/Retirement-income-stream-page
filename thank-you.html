@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Thank You | Tshepiso Financial Planner</title>
+
+  <meta
+    name="description"
+    content="Thank you for completing your Wealth & Retirement Assessment."
+  >
+
+
+  <!-- =====================================================
+       META PIXEL
+       ===================================================== -->
+
+  <script>
+
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+      };
+
+      if(!f._fbq)f._fbq=n;
+
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+
+    }(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
+
+
+    fbq('init', '728696563457382');
+
+    fbq('track', 'PageView');
+
+    /*
+      The visitor reached this page after submitting
+      the retirement assessment, so this is the
+      conversion event for Meta.
+    */
+
+    fbq('track', 'Lead');
+
+  </script>
+
+
+  <noscript>
+
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=728696563457382&ev=Lead&noscript=1"
+    />
+
+  </noscript>
+
+
+  <!-- =====================================================
+       STYLING
+       ===================================================== -->
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      color: #222;
+
+      background: #f5f1ea;
+
+      line-height: 1.6;
+
+      min-height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+    }
+
+
+    /* =====================================================
+       MAIN
+       ===================================================== */
+
+    main {
+
+      flex: 1;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 60px 20px;
+
+    }
+
+
+    .thank-you-card {
+
+      width: 100%;
+
+      max-width: 720px;
+
+      background: #ffffff;
+
+      border-radius: 12px;
+
+      padding: 55px 45px;
+
+      text-align: center;
+
+      box-shadow:
+        0 10px 35px rgba(0,0,0,0.08);
+
+      border:
+        1px solid #e2d8c8;
+
+    }
+
+
+    /* =====================================================
+       SUCCESS ICON
+       ===================================================== */
+
+    .success-icon {
+
+      width: 65px;
+
+      height: 65px;
+
+      line-height: 65px;
+
+      margin: 0 auto 25px;
+
+      border-radius: 50%;
+
+      background: #b57514;
+
+      color: #ffffff;
+
+      font-size: 30px;
+
+      font-weight: bold;
+
+    }
+
+
+    /* =====================================================
+       TEXT
+       ===================================================== */
+
+    h1 {
+
+      font-size: 40px;
+
+      line-height: 1.2;
+
+      margin-bottom: 18px;
+
+      color: #222;
+
+    }
+
+
+    .intro {
+
+      font-size: 19px;
+
+      color: #444;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    .message {
+
+      font-size: 16px;
+
+      color: #666;
+
+      max-width: 580px;
+
+      margin: 0 auto 30px;
+
+    }
+
+
+    .planner {
+
+      border-top:
+        1px solid #e6e0d7;
+
+      padding-top: 25px;
+
+      margin-top: 25px;
+
+    }
+
+
+    .planner-name {
+
+      font-size: 21px;
+
+      font-weight: bold;
+
+      color: #222;
+
+      margin-bottom: 3px;
+
+    }
+
+
+    .planner-title {
+
+      color: #b57514;
+
+      font-weight: bold;
+
+      margin-bottom: 10px;
+
+    }
+
+
+    .planner-description {
+
+      color: #666;
+
+      font-size: 15px;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    footer {
+
+      background: #111;
+
+      color: #aaa;
+
+      text-align: center;
+
+      padding: 35px 20px;
+
+      font-size: 13px;
+
+    }
+
+
+    footer strong {
+
+      display: block;
+
+      color: #ffffff;
+
+      font-size: 16px;
+
+      margin-bottom: 6px;
+
+    }
+
+
+    footer .filer {
+
+      color: #cfcfcf;
+
+      margin-bottom: 6px;
+
+    }
+
+
+    footer .copyright {
+
+      margin-top: 12px;
+
+      color: #777;
+
+    }
+
+
+    /* =====================================================
+       MOBILE
+       ===================================================== */
+
+    @media (max-width: 600px) {
+
+      main {
+
+        padding:
+          35px 15px;
+
+      }
+
+
+      .thank-you-card {
+
+        padding:
+          40px 22px;
+
+      }
+
+
+      h1 {
+
+        font-size: 32px;
+
+      }
+
+
+      .intro {
+
+        font-size: 17px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       THANK YOU CONTENT
+       ===================================================== -->
+
+  <main>
+
+    <div class="thank-you-card">
+
+
+      <div class="success-icon">
+        ✓
+      </div>
+
+
+      <h1>
+        Thank You
+      </h1>
+
+
+      <p class="intro">
+
+        Your Wealth & Retirement Assessment
+        has been received.
+
+      </p>
+
+
+      <p class="message">
+
+        I'll review the information you've provided
+        and use it to better understand your current
+        position, your goals and what you're ultimately
+        trying to achieve with your wealth.
+
+      </p>
+
+
+      <p class="message">
+
+        I'll be in touch during your preferred
+        contact time to discuss your assessment
+        and the next steps.
+
+      </p>
+
+
+      <div class="planner">
+
+
+        <div class="planner-name">
+          Tshepiso Financial Planner
+        </div>
+
+
+        <div class="planner-title">
+          Financial Planner & Wealth Planning Professional
+        </div>
+
+
+        <div class="planner-description">
+
+          Helping professionals build wealth,
+          plan for future income and work towards
+          long-term financial independence.
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- =====================================================
+       COMPLIANCE FOOTER
+       ===================================================== -->
+
+  <footer>
+
+    <strong>
+      Tshepiso Financial Planner
+    </strong>
+
+
+    <div class="filer">
+
+      A representative of Liberty Group Limited,
+      an Authorised Financial Services Provider
+      (FSP 2409).
+
+    </div>
+
+
+    <div>
+
+      Financial planning and advisory services.
+      Terms, conditions, risks and limitations apply.
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Tshepiso Financial Planner.
+      All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
